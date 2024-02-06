@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="cal.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly/>
+        <div class="buttons">
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="clearResult()"><i class="fa-solid fa-eraser"></i></button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('/')"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('%')"><i class="fa-solid fa-percent"></i></button>
+            <button onclick="appendValue('-')"><i class="fa-solid fa-minus"></i></button>
+            <button onclick="appendValue('+')" class="add"><i class="fa-solid fa-plus"></i></button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="evaluateResult()" class="butt"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <!-- <button onclick="one()">submit</button> -->
+    <div id="two"></div>
+    <script src="cal.js"></script>
+</body>
+</html>
